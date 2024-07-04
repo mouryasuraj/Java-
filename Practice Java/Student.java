@@ -12,9 +12,12 @@ class Student{
         // When you pass zero parameter then this constructor will be called
         System.out.println("Creating Object with non-parameterized "+name + id);
     }
-    public Student(int id, String name){
+    public Student(int id, String name, String city){
         // When an int paramter is passed then this construtor will be called
         System.out.println("Creating object with parameter"+ id + name);
+        studentId=id;
+        studentCity=city;
+        studentName=name;
     }
 
     // methods or functions 
@@ -35,11 +38,7 @@ class Student{
 
         s1.showFullDetails();
 
-        Student s2 = new Student(35, "Shiv");
-        s2.studentName = "Shiv";
-        s2.studentId=133;
-        s2.studentCity="Yadav";
-
+        Student s2 = new Student(123, "Suraj", "Mumbai");
         s2.showFullDetails();
     }
 }
